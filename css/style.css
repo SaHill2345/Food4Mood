@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    height: 80px;
+    width: 73x;
+    padding: 20px;
+    margin: -7px 1.2px;
+    /* background: 2px black; */
+}
+
+
+/* Navigation bar  */
+
+#navbar {
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    font-family: 'Lobster', cursive;
+    color: rgb(17, 235, 35);
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    margin: 4px 4px;
+    /* border: 4px solid hotpink; */
+    border-radius: 15px;
+}
+
+#navbar ul li a:hover {
+    color: yellow;
+    background-color: tomato;
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
+
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 456px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/italian-cuisine-2378729_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.83;
+}
+
+
+/* Services section */
+
+#services {
+    margin: 18px;
+    display: flex;
+}
+
+#services .box {
+    /* margin: -144px; */
+    border: 2px solid brown;
+    margin: 3px 55px;
+    padding: 34px;
+    border-radius: 23px;
+    background-color: rgb(230, 207, 217);
+    box-shadow: 8px 5px red;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+#services .box img {
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+
+
+/* Clients section  */
+
+#client-section {
+    position: relative;
+}
+
+#client-section ::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../img/bg.jpg') no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 124px;
+}
+
+.client-item {
+    padding: 50px;
+}
+
+
+/* Contact Section  */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../img/contact.png') no-repeat center center/cover;
+    width: 100%;
+    height: 170%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+#contact input:hover,
+#contact textarea:hover {
+    background-color: rgb(15, 171, 233);
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility classes */
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+    margin: 25px;
+    border: 3px solid hotpink;
+    background-color: orangered;
+    border-radius: 10px;
+    /* display: block; */
+    /* margin: auto; */
+}
+
+.h1-primary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+    margin: 25px;
+}
+
+.h-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+}
+
+.btn {
+    padding: 6px 20px;
+    margin: 17px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.center {
+    text-align: center;
+}
